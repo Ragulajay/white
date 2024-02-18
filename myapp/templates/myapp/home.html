@@ -17,7 +17,7 @@
      <form action="" method="post" enctype="multipart/form-data">
       {% csrf_token %}
       {{form}}
-      <input type="submit" class="btn btn-danger" value="Upload">
+      <a href="{% url 'admin:index' %}" class="admin-button">Admin</a>
      </form>
     </div>
     <div class="row">
